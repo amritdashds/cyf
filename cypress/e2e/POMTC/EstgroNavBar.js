@@ -12,10 +12,6 @@ describe("Estgro Login", () =>
     Landing.enterEmail();
     Landing.enterPassword();
     Landing.submit();
-
-    // portal.ClickEmail()
-    // portal.
-    // portal.submit()
     Landing.logout()
   });
 

@@ -23,3 +23,25 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import Loginpage from "../PageObject/Loginpage"
+import Portalset from "../PageObject/Portalset";
+
+
+Cypress.Commands.add('LoginApp', () => 
+{
+    const lopage = new Loginpage()
+    lopage.enterurl();
+    lopage.enterEmail();
+    lopage.enterPassword();
+    lopage.submit();
+    lopage.logout();
+})
+Cypress.Commands.add('portalzzz', () => 
+{
+    const portalz = new Portalset()
+    portalz.ClickEmail();
+    portalz.clickaccount();
+    portalz.clickbusiness();
+
+})
