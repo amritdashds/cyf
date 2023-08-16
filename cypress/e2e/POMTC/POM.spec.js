@@ -21,4 +21,4 @@ describe('POM Test', () => {
         Loginpage.enterPassword('Dots@123');
         Loginpage.submit();
     })
-   })
+   })class
