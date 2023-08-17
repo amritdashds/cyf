@@ -28,12 +28,9 @@ describe('EstgroNavBarTouch', () => {
       cy.get('a[href="/payment-history"]').click()  
               
       cy.get('a[href="/helpandsupport"]').click()      
-    
-
       cy.get('.main-sidebar.main-sidebar-new.d-flex.flex-column').scrollTo('bottom')            
       cy.get('a[href="/account/my-account"]').click()           
-      cy.get('a[href="/manage-business-account"]').click()      
-
+      cy.get('a[href="/manage-business-account"]').click()  
       cy.get('.main-sidebar.main-sidebar-new.d-flex.flex-column').scrollTo('top', { duration: 500 });
       cy.get('a[href="/Identity/Account/Logout"]').click();
     

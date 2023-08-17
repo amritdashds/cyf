@@ -10,6 +10,6 @@ describe("Estgro Login", () =>
     Landing.enterEmail();
     Landing.enterPassword();
     Landing.submit();
-    Landing.logout()
+    Landing.logout();
   });
   });
