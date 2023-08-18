@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 
+// import Loginpage from "../../../PageObject/Loginpage";
 import Loginpage from "/Adxautomation/cypress/PageObject/Loginpage.js"
 
 describe('POM Test', () => {
@@ -21,4 +22,4 @@ describe('POM Test', () => {
         Loginpage.enterPassword('Dots@123');
         Loginpage.submit();
     })
-   })class
+   })

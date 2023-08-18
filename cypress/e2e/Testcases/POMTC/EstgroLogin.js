@@ -1,5 +1,5 @@
-import Loginpage from "../../PageObject/Loginpage"
-import Portalset from "../../PageObject/Portalset.js"
+import Loginpage from "../../../PageObject/Loginpage"
+import Portalset from "../../../PageObject/Portalset.js"
 
 describe("Estgro Login", () => 
 {
