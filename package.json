@@ -11,7 +11,11 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^12.17.4",
+    "cypress-file-upload": "^5.0.8",
     "iframe": "^1.0.0",
     "neat-csv": "^5.2.0"
+  },
+  "dependencies": {
+    "latest-version": "^7.0.0"
   }
 }
