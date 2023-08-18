@@ -5,8 +5,7 @@ import 'cypress-file-upload';
 
 describe('File Download Scenario 1',() => 
 {
-
-    it.only('Single file download',()=>
+       it.only('Single file download',()=>
     {
         cy.visit('https://the-internet.herokuapp.com/download');
         cy.get("h3").should('have.text','File Downloader');    

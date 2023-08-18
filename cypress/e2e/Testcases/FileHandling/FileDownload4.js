@@ -1,6 +1,3 @@
-
-
-
 /// <reference types="cypress"/>
 
 import csv from 'neat-csv'
