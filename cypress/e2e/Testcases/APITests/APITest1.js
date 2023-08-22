@@ -2,10 +2,11 @@
 
 describe("HTTP Requests", () => {
   it("Get Call", () => {
-    cy.request('GET', 'https://rahulshettyacademy.com/AutomationPractice/')
-         .then((response) => 
-         {
-        expect(response.status).to.equal(200);
+        cy.request({
+          method: 'GET',
+          url: 'https://rahulshettyacademy.com/AutomationPractice/' // Replace with your API endpoint URL
+        }).then(response => {
+          expect(response.status).to.equal(200);
       });
   });
 })
