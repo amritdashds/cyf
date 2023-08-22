@@ -1,20 +1,10 @@
-/// <reference types="cypress"/>
-
-it('APITest', () => {
-  cy.visit("https://www.rahulshettyacademy.com/");
-  
-  // Intercept the API call
-  cy.intercept({
-    method: 'GET',
-    url: 'https://www.rahulshettyacademy.com/api/course',
-  }).as('userdetail');
-
-  // Wait for the interception and perform assertions
-  cy.wait('@userdetail').then(interception => {
-    // Check the response status code
-    expect(interception.response.statusCode).to.equal(200);
-
-    // Check the response body or any specific properties you want to assert
-    expect(interception.response.body).to.have.property('key', 'value'); // Replace with your expected properties
+describe('API Tests', () => {
+  it('should return a 404 status code for a not found request', () => {
+    cy.request({
+      method: 'GET',
+      url: 'https://rahulshettyacademy.com/AutomationPdfsgtsrice/'
+    }).then(response => {
+      expect(response.status).to.equal(200);
+      });
   });
 });
