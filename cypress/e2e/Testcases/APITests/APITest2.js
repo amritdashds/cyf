@@ -2,7 +2,7 @@
 
 describe("HTTP Requests", () => {
   it("Get Call", () => {
-    cy.request('GET', 'https://rahulshettyacademy.com/AutomationPractice/')
+    cy.request('GET', 'https://www.google.com')
       .its('status')
       .should('equal', 200);
   });
